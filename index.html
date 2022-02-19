@@ -28,8 +28,8 @@
     <!--<button id="button1">Click Me</button>-->
     <button onclick="APIcall()" id="button1">Click Me</button>
     <script>function APIcall(){
-      var key=google_tag_manager['GTM-53DMMGF'].dataLayer.get('gtm.key');
-      var value=google_tag_manager['GTM-53DMMGF'].dataLayer.get('gtm.value');
+      var key=dataLayer[0].key;
+      var value=dataLayer[0].value;
       fetch('https://httpbin.org/get?key='+key+'=&value='+value)
       .then(response => response.json())
       .then(data => console.log(data));}</script>
