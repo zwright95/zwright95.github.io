@@ -4,11 +4,11 @@
     <!-- Data Layer -->
     <script>
       window.dataLayer = window.dataLayer || [];
-      let dataParams = new URLSearchParams(document.location.search);
-      let key = dataParams.get("key");
-      let value = dataParams.get("value");
-      dataLayer.push({'key': key,
-                      'value': value});</script>
+      var dataParams = new URLSearchParams(document.location.search);
+      var ikey = dataParams.get("key");
+      var ivalue = dataParams.get("value");
+      dataLayer.push({'key': ikey,
+                      'value': ivalue});</script>
     <!-- End Data Layer -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
