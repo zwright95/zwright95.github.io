@@ -25,6 +25,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <h1>DON'T CLICK</h1>
-    <button onclick="window.location.href='https://httpbin.org/get?key=key&value=value';">Click Me</button>
+    <button id="button1">Click Me</button>
+    <!--<button onclick="APIcall()">Click Me</button>
+    <script>function APIcall(){
+      fetch('https://httpbin.org/get?key=key&value=value')
+      .then(response => response.json())
+      .then(data => console.log(data));}</script>-->
   </body>
 </html>
