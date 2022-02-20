@@ -18,6 +18,24 @@
     })(window,document,'script','dataLayer','GTM-53DMMGF');</script>
     <!-- End Google Tag Manager -->
     <title>Zack's Rad Webpage</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      h1 {text-align: center;}
+      div {text-align: center;}
+      h3 {
+           text-align: center;
+           font-size: 20px;}
+      button {
+              text-align: center;
+              color: white;
+              background-color: gray;
+              border-radius: 25px;
+              height: 75px;
+              width: 150px;
+              font-size: 20px;}
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -25,12 +43,14 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <h1>Welcome</h1>
-    <p>
+    <div>
+      <h3>Click the button below to make an API GET request to httpbin.org</h3>
+      <br>
       <button onclick="APIcall()" id="button1">Click Me</button>
       <br>
       <br>
       <a href="https://raw.githubusercontent.com/zwright95/zwright95.github.io/master/UserFlow_ZackWright.png">Link to UserFlow diagram</a>
-    </p>
+    </div>
     <script>function APIcall(){
       var key=dataLayer[0].key;
       var value=dataLayer[0].value;
